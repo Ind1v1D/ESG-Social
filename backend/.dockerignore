@@ -1,0 +1,33 @@
+# Version control
+.git
+.gitignore
+
+# Virtual environment
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Environment secrets
+.env
+
+# Database files (persisted via Docker volume)
+*.db
+*.db-shm
+*.db-wal
+
+# Sample / test data
+*.xlsx
+
+# Docker
+Dockerfile
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
