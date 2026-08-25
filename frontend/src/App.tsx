@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { FilterProvider } from './context/FilterContext';
 import { ExportProvider } from './context/ExportContext';
 import { Layout } from './components/Layout';
@@ -13,7 +13,7 @@ import { AdminUploads } from './pages/AdminUploads';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <FilterProvider>
         <ExportProvider>
           <Routes>
@@ -31,7 +31,7 @@ function App() {
           </Routes>
         </ExportProvider>
       </FilterProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
