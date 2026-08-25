@@ -24,7 +24,8 @@ services:
       sizeGB: 1
 
   # ─── Frontend (Static Site) ──────────────────────────────
-  - type: static
+  - type: web
+    runtime: static
     name: esg-frontend
     buildCommand: cd frontend && npm install && npm run build
     staticPublishPath: frontend/dist
